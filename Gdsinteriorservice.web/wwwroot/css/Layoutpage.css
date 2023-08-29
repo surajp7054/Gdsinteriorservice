@@ -1,0 +1,117 @@
+﻿ body 
+ {
+    overflow-x:hidden;
+ }
+ header {
+    width: 100vw;
+    height: 100px;
+    background-color:#fff;
+
+ }
+ header .container-fluid{
+        width: 100%;
+        padding: 0 60px; 
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+ }
+ header .navbar-brand img{   
+     height:70px;
+ }
+ a:hover{
+   color:aquamarine;  
+ }
+.main {
+    background-image: url('../image/livingroom3.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    padding:50px 0px;
+}
+.form-box{
+    
+    background-color:rgba(255,255,255,0.5);
+    backdrop-filter:blur(20px);
+    border-radius:20px;
+    border:1px solid white;
+}
+.form-box input{
+    border-radius:10px;
+}
+.form-box input:focus {
+    box-shadow:0 0 0 ;
+    border:1px solid red;
+}
+.form-box select{
+    border-radius:10px;
+}
+.form-box select:focus {
+    box-shadow: 0 0 0;
+    border: 1px solid red;
+}
+.form {
+    display:none;
+    background-color: rgba(255,255,255,0.5);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid white;
+}
+.form input {
+        border-radius: 10px;
+    }
+.form input:focus {
+        box-shadow: 0 0 0;
+        border: 1px solid red;
+    }
+.form select {
+        border-radius: 10px;
+    }
+form select:focus {
+    box-shadow: 0 0 0;
+    border: 1px solid red;
+}
+.closebtn{
+    top:-15px;
+    right:-15px;
+    position:absolute;
+    background-color:red;
+    padding:10px 15px;
+    outline:none;
+    border:none;
+    border-radius:40%;
+    color:white;
+    cursor:pointer;
+
+}
+.closebtn:hover{
+    background-color:red;
+}
+.btn {
+    border-radius: 10px;
+}
+.text h1{
+    font-size:60px;
+}
+ .nav-item{
+     border-radius:10px;
+     
+     margin-inline:3%;
+     font-size:20px;
+     letter-spacing:2px;
+     padding:0px 10px;
+     transition:all .1s ease;
+     cursor:pointer;
+ }
+.formstart {
+    padding-top: 1rem !important;
+    padding-bottom: 3rem !important;
+}
+.zoom {
+    transition: transform .2s; /* Animation */
+ /*   width: 200px;
+    height: 200px;
+    margin: 0 auto;*/
+}
+    .zoom:hover {
+        transform: scale(1.1); 
+    }

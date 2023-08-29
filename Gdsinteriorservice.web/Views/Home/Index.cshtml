@@ -1,0 +1,527 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Start Registration for Enquiry-->
+   <section class="main mb-3">
+       <div class="container">
+           <div class="row justify-content-center">
+               <div class="col-lg-7 col-md-12 d-flex align-items-center">
+                   <div class="text text-center">
+                       <h1 class="text-light ">Dream homes begin with dream designs</h1>
+                       <h2 class="text-light ">Give Your Dream To New Life</h2>
+                   </div>
+               </div>
+               <div class="col-lg-5 col-md-10 col-sm-12">
+                   <div class="form-box px-5 py-2">
+                       <form  method="Post">
+                           <h2>Live Beautifully</h2>
+                           <span id="errorfirstname" class="text-danger mt-1">*Please Provide the Valid First Name</span>
+                           <input type="text" placeholder=" First Name " class="form-control mb-3" id="firstname"  maxlength="30" />
+
+                           <span id="errorlastname" class="text-danger mt-1 ">*Please Provide the Valid Last Name</span>
+                           <input type="text" placeholder=" Last Name " class="form-control mb-3" id="lastname"  maxlength="30" />
+
+                           <span id="erroremaiid" class="text-danger mt-1 ">*Please Provide the Valid Email-ID</span>
+                           <input type="email" placeholder="E-mail" class="form-control mb-3" id="email" />
+
+                           <span id="errorcontactno" class="text-danger mt-1 ">*Please Provide the Valid Contact No</span>
+                           <input type="text" placeholder=" Contact No " class="form-control mb-3" id="contactno" maxlength="10" onkeypress="return isNumberkey(event)"/>
+
+                           <span id="erroraddress" class="text-danger mt-1 ">*Please Provide the Valid Address With Pincode</span>
+                           <input type="text" placeholder="Address With Pincode" class="form-control mb-3" id="address" />
+
+                           <span id="errorflattype" class="text-danger mb-3 ">Please Select the Valid Flat type</span>
+                           <select class="form-select mb-3" id="flattype">
+                                <option>Select  Type</option>
+                                <option>1 RK</option>
+                                <option>1 BHK</option>
+                                <option>2 BHK</option>
+                                <option>3 BHK</option>
+                                <option>4 BHK</option>
+                                <option>5 BHK</option>
+                                <option>Office</option>
+                           </select>
+                           
+                           <div class="form-group form-check mb-3">
+                               <span id="errortermcondition" class="text-danger mb-3 d-none">*Please check the box </span>
+                               <input type="checkbox" name=""  class="form-check-input" id="agree" checked/>
+                               <label class="form-check-label"><small>By submitting this form, you agree to <a href=""><b> terms & conditions</b></a></small></label>                        
+                           </div>                     
+                        <button class="btn btn-danger text-light form-control"  id="" type="button" onclick="submitformdata()"> Get Free Quote</button>
+                       </form>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>     
+   <!-- End  Registration for Enquiry-->
+
+   <!-- Start Why Choose GDS interior Service-->
+   <div class=" mb-2 bg-warning ">
+       <h3 class="text-light text-center py-2">Why Choose GDS interior Service</h3>
+       <p class="text-center text-light">A love of creativity / a commitment to quality / a willingness to listen to their clients 
+        /and a desire to keep up with short-term trends in interior design and interior decorating. </p>
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-2  py-2 ">
+                     <img src="~/image/sitebrowsepic/create us.jpg"  class="img-fluid rounded-circle" alt="image not found"/>
+                </div>
+                <div class="col-md-4  py-2">
+                    <div class="card-body">
+                        <h5 class="card-title ">1. Well- Considered Design</h5>
+                        <p>Combining extensive knowledge and experience makes our team uniquely qualified to create innovative and stylish solutions for your home, 
+                        workplace or holiday rental.</p>
+                    </div>
+                </div>
+                <div class="col-md-2  py-2">
+                     <img src="~/image/sitebrowsepic/createhome.png" class="img-fluid rounded-circle" alt="image not found"/>
+                </div>
+                <div class="col-md-4  py-2">
+                    <div class="card-body">
+                    <h5 class="card-title">2. We create for you</h5>
+                    <p>We listen to our clients and create a personalised design solution that is tailored to you.
+                        We want you to love the end result and will work with you to ensure you are more than happy with the outcome.</p>
+                    </div>
+                </div>
+                <div class="col-md-2 mt-3 py-2">
+                     <img src="~/image/sitebrowsepic/investimg.png" class="img-fluid rounded-start" alt="image not found" />
+                </div>
+                <div class="col-md-4 py-2">
+                    <div class="card-body">
+                        <h5 class="card-title">3.Value For your Investment</h5>
+                        <p>The experience of an Interior Designer will help you avoid financial disappointment and end up with a project that will delight you,
+                        not only because of the knowledge we have, but because of the suppliers and trades we use to provide our clients with the greatest value. </p>
+                    </div>
+                </div>
+                <div class="col-md-2 p-2">
+                   <img src="~/image/sitebrowsepic/seamless solutions1.jpg"  class="img-fluid rounded-circle" alt="image not found"/>
+                </div>
+                <div class="col-md-4 py-2">
+                    <div class="card-body">
+                        <h5 class="card-title"> 4.Seamless solution</h5>
+                        <p>A seamless process of design, construction,
+                        and decoration is ensured through our creative team's seamless management of your project from start to finish. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+
+   <!--End Why Choose GDS interior Service-->
+
+   <!--Start Design Process-->
+   <div class="container mb-1">
+    <h1 class="text-center "> We Follow a Step-by-Step Process for Design</h1>
+    <p>
+        Your home is all about you.  It should reflect who you are and what you love. 
+        Creating a space that reflects your personality and makes you feel comfortable and content is essential for making your home a place you love.
+        In the first call, we seek to understand your expectations for a living space and what you are looking for.      
+        With our help, you can create a home that is truly unique to you.
+        </p>  
+     <div class="card-deck">  
+        <div class="col-md-12">
+            <div class="row">
+                <div class="card col-md-3 m-2">
+                    <img class="card-img-top" src="~/image/understandingpic.jpeg" alt="Card image cap" />
+                    <div class="card-body">
+                        <h5 class="card-title"> 1st Recognizing Your Needs </h5>
+                        <p class="card-text">
+                            The needs and preferences you have, both functionally and aesthetically, 
+                            will be carefully considered by our team.
+                        </p>
+                    </div>
+                </div>
+                <div class="card col-md-3 m-2">                  
+                    <img  class="card-img-top" alt="cardimgehome"src="~/image/download.png" />
+                    <div class="card-body">
+                        <h5 class="card-title">2nd We look forward to designing your future home together</h5>
+                        <p class="card-text">
+                            Our interior designer will create a special layout for your home and present it to you in three dimensions.
+                        </p>
+                    </div>
+                </div>
+                <div class="card col-md-2 m-2">
+                    <img class="card-img-top" alt="Card image cap" src="~/image/costoptmazation.jpeg" />
+                    <div class="card-body">
+                        <h5 class="card-title">3rd Planning and managing costs </h5>
+                        <p class="card-text">
+                            We will work with you to create a plan that meets both your needs and your budget.
+                            We will provide you with detailed estimates of costs and timelines.
+                        </p>
+                    </div>
+                </div>
+                <div class="card col-md-3 m-2">
+                    <img class="card-img-top" alt="Card image cap" src="~/image/handover.jpg" />
+                    <div class="card-body">
+                        <h5 class="card-title"> 4th Site handover and warranty</h5>
+                        <p class="card-text">
+                            That moment is special for you and us. We take pride in our work and strive to create homes that you can be proud of. 
+                            We look forward to hearing about your future experiences in your new home.
+                        </p>
+                    </div>
+                </div>
+            </div>        
+        </div>
+     </div>
+   </div>
+   <!--End Design Process-->
+
+   <!-- Star Book Apointment Content-->
+   <div class="bg-secondary mb-1 py-2 px-2" style="">
+       <div class="container">
+             <h3 class="text-center text-light">From modern to classic, make your dream home a reality. </h3>
+             <div class="mt-3">
+                 <p class="text-center text-light">
+                GDS interior services are tailored to meet the highest standards of quality and design.
+                We use modern materials and innovative techniques and products to ensure that your home has the perfect combination of beauty, functionality, and durability.
+                 </p>
+             </div>
+             <div class="text-center" >
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">BOOK FREE CONSULTATION</button>
+             </div>
+       </div>
+   </div>
+   <!--End Book Appoinment Content-->
+
+
+ <!--Start Interior service By Room -->
+     <!-- Start Living Room-->
+   <div class=" container mt-3 mb-1 ">
+       <h3 class="text-black text-center "> Interior Design Services By Room</h3>
+       <p class="text-black"><small class="text-muted"></small></p>
+       <h4 class="text-black  "> Living Room </h4>      
+       <div class="row ">
+            <div class="col-sm-3 card py-2 zoom">
+            <img src="~/image/livingroom14.jpeg" class="img-fluid rounded " alt="image not found" style="width:100%;height:100%;">
+            </div>
+            <div class="col-sm-3 card  py-2 zoom">
+            <img src="~/image/livingroom1.jpeg" class="img-fluid rounded " alt="image not found" style="width:100%;height:100%;">
+            </div>
+            <div class="col-sm-3 card py-2 zoom">
+                <img src="~/image/livingroom13.jpeg" class="img-fluid rounded " alt="image not found">
+            </div>
+            <div class="col-sm-3 card py-2 zoom">
+            <img src="~/image/livingroom4.jpeg" class="img-fluid rounded " alt="image not found" style="width:100%;height:100%;">
+            </div>
+            <div class="col-sm-3 card py-2 zoom">
+                <img src="~/image/livingroom5.jpeg" class="img-fluid rounded " alt="image not found">
+            </div>
+            <div class="col-sm-3 card py-2 zoom">
+                <img src="~/image/livingroom9.jpeg" class="img-fluid rounded " alt="image not found">
+            </div>
+            <div class="col-sm-3 card py-2 zoom">
+                <img src="~/image/livingroom11.jpeg" class="img-fluid rounded " alt="image not found">
+            </div>
+            <div class="col-sm-3 card py-2 zoom">
+                <img src="~/image/livingroom6.jpeg" class="img-fluid rounded " alt="image not found">
+            </div>
+       </div>        
+   </div>
+     <!--Living Room End-->
+
+     <!--Start Kitchen-->
+   <div class="container mt-3 mb-1">
+        <h4 class="text-black">Kitchen</h4>
+        <div class="row">
+            <div class="col-sm-3 card py-2 zoom">
+            <img src="~/image/kitchenimg/kitchen3.jpeg" class="img-fluid rounded" alt="image not found" style="width:100%;height:100%;" />
+            </div>
+            <div class="col-sm-3 card py-2 zoom">
+                 <img src="~/image/kitchenimg/kitchen2.jpeg" class="img-fluid rounded" alt="image not found" style="width:100%;height:100%;" />
+            </div>
+            <div class="col-sm-3 card py-2 zoom" >
+                 <img src="~/image/kitchenimg/kitchen1.jpeg" class="img-fluid rounded" alt="image not found" style="width:100%;height:100%;" />
+            </div>
+            <div class="col-sm-3 card py-2 zoom">
+                 <img src="~/image/Kitchenimg/BHS_Auris_Serenity_0766.jpg" class="img-fluid rounded" alt="image not found" />
+            </div>
+        </div>
+   </div>
+     <!--End Kitchen-->
+     
+     <!--Start Bedroom-->
+   <div class="container mt-3 mb-1">
+       <h4 class="text-black">Bedroom</h4>
+       <div class="row">
+           <div class="col-sm-3 card py-2 zoom">
+               <img src="~/image/bedroomimg/bedroom2.jpeg" class="img-fluid rounded" alt="image not found" />
+           </div>
+           <div class="col-sm-3 card py-2 zoom">
+               <img src="~/image/bedroomimg/bedroom13.jpeg" class="img-fluid rounded" alt="image not found"/>
+           </div>
+           <div class="col-sm-3 card py-2 zoom">
+               <img src="~/image/bedroomimg/bedroom10.jpeg" class="img-fluid rounded" alt="image not found" />
+           </div>
+           <div class="col-sm-3 card py-2 zoom">
+               <img src="~/image/bedroomimg/bedroom5.jpeg" class="img-fluid rounded" alt="image not found" />
+           </div>
+           <div class="col-sm-3 card py-2 zoom">
+              <img src="~/image/bedroomimg/bedroom7.jpeg" class="img-fluid rounded" alt="image not found" />
+           </div>
+           <div class="col-sm-3 card py-2 zoom">
+               <img src="~/image/bedroomimg/bedroom1.jpeg"  class="img-fluid rounded" alt="image not found"/>
+           </div>
+           <div class="col-sm-3 card py-2 zoom">
+                <img src="~/image/bedroomimg/bedroom9.jpeg" class="img-fluid rounded" alt="image not found" />
+           </div>
+           <div class="col-sm-3 card py-2 zoom">
+                <img src="~/image/bedroomimg/bedroom8.jpeg" class="img-fluid rounded" alt="image not found" />
+           </div>
+       </div>
+   </div>
+    <!--End Bedroom-->
+
+    <!--Start Bathroom-->
+   <div class="container mt-3 mb-1">
+       <h4 class="text-black">Bathroom</h4>
+       <div class="row">
+            <div class="col-sm-3 card py-2 zoom">
+            <img src="~/image/bathroomimg/bathroom2.jpeg" class="img-fluid rounded" alt="image not found" style="width:100%;height:100%;" />
+            </div>
+            <div class="col-sm-3 card py-2 zoom">
+            <img src="~/image/bathroomimg/bathroom1.jpeg" class="img-fluid rounded" alt="image not found" style="width:100%;height:100%;" />
+            </div>
+            <div class="col-sm-3 card py-2 zoom">
+            <img src="~/image/bathroomimg/bathroom3.jpeg" class="img-fluid rounded" alt="image not found" style="width:100%;height:100%;" />
+            </div>
+            <div class="col-sm-3 card py-2 zoom">
+               <img src="~/image/bathroomimg/bathroom4.jpeg" class="img-fluid rounded" alt="image not found"/>
+            </div>
+       </div>
+   </div>
+   <!--End Bathroom-->
+
+ <!--End Interior Service By Room-->
+
+ <!-- Start What We Offer-->
+ <div class="my-2">
+     <div class="container">
+            <h3 class="py-3 text-center">What We Offer</h3>          
+                <div class="row">
+                    <div class="card-body col-md-4  ">
+                    <h4 class="card-title text-center"><i><img src="~/image/sitebrowsepic/homeservice icon.png" /></i>Our Services</h4>
+                        <ol class="list-group list-group-numbered">
+                            <li class="list-group-item">Modular Kitchen</li>
+                            <li class="list-group-item">Furniture Work</li>
+                            <li class="list-group-item">Lighting</li>
+                            <li class="list-group-item">Flooring</li>
+                            <li class="list-group-item">Electrical work</li>
+                            <li class="list-group-item">Civil Work</li>
+                            <li class="list-group-item">False Ceiling</li>
+                            <li class="list-group-item">Wall Designing & Painting </li>                              
+                        </ol>
+                        @*<div class="card-footer text-center">
+                            <button class="btn btn-danger" type="button">Get Free Quote</button>
+                        </div> *@                          
+                    </div>
+                    <div class=" card-body col-md-3 ">
+                      <h4 class="card-title text-center"><i><img src="~/image/sitebrowsepic/warranty.png" style="width:53px;" /></i>Warranty</h4>
+                      <ol class="list-group list-group-numbered">
+                            <li class="list-group-item">Our  products like bed, wardrobe, study table etc. come with a warranty of 10 years  - enjoy peace of mind</li>
+                            <li class="list-group-item">The warranty covers any on-site work performed by the contractor, including painting, electrical work, plumbing work, and more. </li>
+                      </ol>
+                        @*<div class="card-footer text-center">
+                            <button class="btn btn-danger" type="button">Get Free Quote</button>
+                        </div>*@
+                    </div>
+                    <div class=" card-body col-md-4 ">
+                      <h4 class="card-title text-center"><i><img src="~/image/Sitebrowsepic/benefits.jpg" style="width:53px;" /></i>Price Benefits</h4>
+                      <ol class="list-group list-group-numbered">
+                            <li class="list-group-item">
+                                  Price-match guarantee - Best price match against a branded competitor's quote for exact scope and specifications.
+                            </li>
+                            <li class="list-group-item">We do not charge hidden fees - We have transparent pricing without tacked-ons at the last minute </li>
+                            <li class="list-group-item">Anticipate the real needs of your prospects by comparing their requirements to past transactions with their peers.</li>
+                      </ol>
+@*                      <div class="card-footer text-center">
+                            <button class="btn btn-danger" type="button">Get Free Quote</button>
+                      </div>*@
+                    </div>
+                </div>                                    
+     </div>
+ </div>
+ <!--End what we offer-->
+
+<!--Start Client Testmonial-->
+<div class="container bg-secondary mb-3">
+    <h3 class="text-center text-light py-3">Client Testmonials</h3>
+    <div class="row mb-2">
+        <div class="col-md-4 card-group mb-3">
+            <div class="card">
+                <img src="~/image/bhs_auris_serenity_0378.jpg" class="card-img-top" alt="image not found" />
+                <div class="card-body">
+                    <p class="card-text">"In our opinion, the most impressive factor of the project was the GDS interior service team's focus on finishing the product in the best way possible.
+                        I am very impressed with the quality of the wood work done so far.
+                        The team was very professional in their approach, and were approachable for discussions whenever needed.”</p>
+                    <p class="card-text"><small class="text-muted">A luxurious home in Mumbai</small></p>
+                    <h6><i><img src="~/image/sitebrowsepic/client.png" /></i>Mr. Jayesh Shah  Family</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 card-group mb-3">
+            <div class="card">
+                <img src="~/image/livingroom5.jpeg" class="card-img-top" alt="image not found"/>
+                <div class="card-body">
+                    <p class="card-text">"With GDS interior Service, we got quality and everything was perfect, and that's what we needed. "</p>
+                    <p class="card-text"><small class="text-muted"> A Simple Yet Calming Home In Mumbai</small></p>
+                    <h6><i><img src="~/image/sitebrowsepic/client.png" /></i>Mr. Santosh Gupta & Mrs. Rita Gupta Family </h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 card-group mb-3">
+            <div class="card">
+                <img src="~/image/livingroom2.jpeg" class="card-img-top" alt="image not found" />
+                <div class="card-body">
+                    <p class="card-text">"Our experience with GDS interior services was enjoyable because of the experienced Project Managers. 
+                        The Work Got done before given Time  Just the way we wanted it to be."</p>
+                    <p class="card-text"><small class="text-muted"> A lovely Home In Mumbai</small></p>
+                    <h6><i><img src="~/image/sitebrowsepic/client.png" /></i>Mr. Mayank Shah  Family</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End  Client Testmonial-->
+
+<!--start thanks model on submit-->
+<div class="modal fade p-4" id="thanksmodel" tabindex="-1" aria-hidden="true" data-bs-toggle="modal" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class=" pt-3 " style="text-align:center">
+                    <img src="~/image/check.png" alt="thanks" width="100px;"/>
+                    <h1>Thank You!</h1>
+                    <p>Your Submission is Received and Our Team  will contact you soon </p>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-center"> 
+                <button class="btn-primary" data-bs-dismiss="modal" aria-label="close">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End thanks model on submit-->
+<script src="~/js/site.js" asp-append-version="true"></script>
+<link rel="stylesheet" href="~/css/layoutpage.css"  />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script>
+   
+    $(document).ready(function()
+    {
+        $('.text-danger').hide();     
+    });
+    function isNumberkey(evt)
+    {
+
+        var charcode=(evt.which)?evt.which:event.keyCode
+        if(charcode>31 && (charcode<48 || charcode>57)){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }   
+    function submitformdata() {
+        var firstname = $('#firstname').val();
+        var Lastname = $('#lastname').val();
+        var email = $('#email').val();
+        var contactno = $('#contactno').val();
+        var address = $('#address').val();
+        var flattype = $('#flattype').val();
+
+        var patternfirst = new RegExp("^[a-zA-Z][a-zA-Z \-,]+$");
+        var patternlastname = new RegExp("^[a-zA-Z][a-zA-Z \-,]+$");
+        var patternemail = new RegExp("^[a-z0-9]+([_.-][a-z0-9]+)*@@[a-z0-9]+([_.-]Â­[a-z0-9]+)*\.(com|ca|net|org|fr|us|qc.ca|gouv.qc.ca)$");
+        var patterncontact = new RegExp("^[6-9]{1}[)]?[-\s\.]?[0-9]{5}[-\s\.]?[0-9]{4}$");
+        var patternaddress = new RegExp("^[a-zA-Z][a-zA-Z0-9 \-,]+$");
+
+        var UserRequest = {
+            FirstName: firstname,
+            Lastname: Lastname,
+            EmailID: email,
+            PhoneNo: contactno,
+            address: address,
+            flattype: flattype
+        }
+
+        if (firstname == '') {
+            $('#errorfirstname').show();
+            return false;
+        }
+        else if (!patternfirst.test(firstname)) {
+            $('#firstname').val('');
+            $('#errorfirstname').show();
+            return false;
+        }
+        else if (Lastname == '') {
+            $('#errorlastname').show();
+            return false;
+        }
+        else if (!patternlastname.test(Lastname)) {
+            $('#lastname').val('');
+            $('#errorlastname').show();
+            return false;
+        }
+        else if (email == '') {
+            $('#erroremaiid').show();
+            return false;
+        }
+        else if (!patternemail.test(email)) {
+            $('#email').val('');
+            $('#erroremaiid').show();
+            return false;
+        }
+        else if (contactno == '') {
+            $('#errorcontactno').show();
+            return false;
+        }
+        else if (!patterncontact.test(contactno)) {
+            $('#contactno').val('');
+            $('#errorcontactno').show();
+            return false;
+        }
+        else if (address == '') {
+            $('#erroraddress').show();
+            return false;
+        }
+        else if (!patternaddress.test(address)) {
+            $('#address').val('');
+            $('#erroraddress').show();
+            return false;
+        }
+        else if (flattype == '') {
+            $('#errorflattype').show();
+            return false;
+        }
+        else {
+            $('#errorfirstname').hide();
+            $('#errorlastname').hide();
+            $('#erroremaiid').hide();
+            $('#errorcontactno').hide();
+            $('#erroraddress').hide();
+            $('#errorflattype').hide();
+            Submitformdatadetails(UserRequest);
+            return true;
+        }
+    }
+    function Submitformdatadetails(UserRequest) {
+        $.ajax({
+            method: "POST",
+            url: "/Home/Saveuserdata",
+            data: (UserRequest),
+            success: function (data) {
+                $("#thanksmodel").modal("toggle");
+            },
+            error: function () {
+                alert("Fail");
+            }
+        });
+    }
+
+</script>
